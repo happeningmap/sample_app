@@ -24,8 +24,7 @@ gem 'jquery-rails'
 
 
 group :development do
-  gem 'rspec-rails', '2.6.1.beta1'
-  
+  gem 'rspec-rails', '2.6.1.beta1'  
 end
 
 

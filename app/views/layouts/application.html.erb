@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <%= favicon_link_tag '/favicon.ico' %>
 	<title><%= title %></title>
@@ -7,9 +8,13 @@
 	<%= render 'layouts/stylesheets' %>
 </head>
 <body>
+	
 	<div class="container">
-		<%= render 'layouts/header' %>
+		<%= render 'layouts/header' %>	
 		<section class="round">
+			<% flash.each do |key, value| %>
+		      <div class="flash <%= key %>"><%= value %></div>
+		    <% end %>
 			<%= yield %>
 		</section>
 		<%= render 'layouts/footer' %>

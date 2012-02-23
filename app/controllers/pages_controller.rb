@@ -4,7 +4,7 @@ class PagesController < ApplicationController
     if signed_in?
       redirect_to current_user
     else
-      @title = "HOME"
+      @title = ""
     end
     
     
@@ -12,17 +12,17 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @title = "CONTACT"
+    @title = " | Contact"
     
   end
   
   def about
-    @title = "ABOUT"
+    @title = " | About"
     
   end
   
   def help
-    @title = "HELP"
+    @title = " | Help"
     
   end
   
